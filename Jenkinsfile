@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'schoolofdevops/carts-maven:3.9'
+    }
+
+  }
   stages {
     stage('build') {
       steps {
