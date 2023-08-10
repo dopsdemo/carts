@@ -37,10 +37,7 @@ pipeline {
     }
 
   }
-  tools {
-    maven 'Maven 3.9.3'
-    jdk 'JDK 20.0.2'
-  }
+ 
   post {
     always {
       echo 'This pipeline is completed..'
