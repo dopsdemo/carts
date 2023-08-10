@@ -7,6 +7,9 @@ pipeline {
   }
   stages {
     stage('build') {
+      environment { 
+                JAVA_HOME = /opt/java/openjdk
+            }
       steps {
         sh 'mvn compile'
       }
